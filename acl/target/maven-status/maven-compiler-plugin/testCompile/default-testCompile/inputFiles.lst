@@ -1,0 +1,7 @@
+/Users/rtw/IdeaProjects/RocketMQ/acl/src/test/java/org/apache/rocketmq/acl/common/SessionCredentialsTest.java
+/Users/rtw/IdeaProjects/RocketMQ/acl/src/test/java/org/apache/rocketmq/acl/plain/PlainPermissionLoaderTest.java
+/Users/rtw/IdeaProjects/RocketMQ/acl/src/test/java/org/apache/rocketmq/acl/common/PermissionTest.java
+/Users/rtw/IdeaProjects/RocketMQ/acl/src/test/java/org/apache/rocketmq/acl/common/AclSignerTest.java
+/Users/rtw/IdeaProjects/RocketMQ/acl/src/test/java/org/apache/rocketmq/acl/plain/RemoteAddressStrategyTest.java
+/Users/rtw/IdeaProjects/RocketMQ/acl/src/test/java/org/apache/rocketmq/acl/common/AclUtilsTest.java
+/Users/rtw/IdeaProjects/RocketMQ/acl/src/test/java/org/apache/rocketmq/acl/plain/PlainAccessValidatorTest.java

@@ -1,0 +1,8 @@
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/netty/FileRegionEncoderTest.java
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/RemotingServerTest.java
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/protocol/RocketMQSerializableTest.java
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/protocol/RemotingSerializableTest.java
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/netty/NettyRemotingClientTest.java
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/protocol/RemotingCommandTest.java
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/netty/NettyRemotingAbstractTest.java
+/Users/rtw/IdeaProjects/RocketMQ/remoting/src/test/java/org/apache/rocketmq/remoting/TlsTest.java

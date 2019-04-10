@@ -1,0 +1,8 @@
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/processor/DefaultRequestProcessor.java
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/NamesrvStartup.java
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/kvconfig/KVConfigManager.java
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/routeinfo/RouteInfoManager.java
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/kvconfig/KVConfigSerializeWrapper.java
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/NamesrvController.java
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/routeinfo/BrokerHousekeepingService.java
+/Users/rtw/IdeaProjects/RocketMQ/namesrv/src/main/java/org/apache/rocketmq/namesrv/processor/ClusterTestRequestProcessor.java

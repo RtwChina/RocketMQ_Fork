@@ -1,0 +1,6 @@
+/Users/rtw/IdeaProjects/RocketMQ/openmessaging/src/test/java/io/openmessaging/rocketmq/consumer/PushConsumerImplTest.java
+/Users/rtw/IdeaProjects/RocketMQ/openmessaging/src/test/java/io/openmessaging/rocketmq/consumer/PullConsumerImplTest.java
+/Users/rtw/IdeaProjects/RocketMQ/openmessaging/src/test/java/io/openmessaging/rocketmq/producer/ProducerImplTest.java
+/Users/rtw/IdeaProjects/RocketMQ/openmessaging/src/test/java/io/openmessaging/rocketmq/consumer/LocalMessageCacheTest.java
+/Users/rtw/IdeaProjects/RocketMQ/openmessaging/src/test/java/io/openmessaging/rocketmq/utils/BeanUtilsTest.java
+/Users/rtw/IdeaProjects/RocketMQ/openmessaging/src/test/java/io/openmessaging/rocketmq/promise/DefaultPromiseTest.java

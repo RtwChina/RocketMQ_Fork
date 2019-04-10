@@ -1,0 +1,13 @@
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/message/MessageDecoderTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/MessageBatchTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/BrokerConfigTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/MQVersionTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/message/MessageTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/MixAllTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/DataVersionTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/UtilAllTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/RegisterBrokerBodyTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/protocol/ConsumeStatusTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/RemotingUtilTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/MessageEncodeDecodeTest.java
+/Users/rtw/IdeaProjects/RocketMQ/common/src/test/java/org/apache/rocketmq/common/filter/FilterAPITest.java

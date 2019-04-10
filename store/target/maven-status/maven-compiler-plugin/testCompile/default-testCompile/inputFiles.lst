@@ -1,0 +1,11 @@
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/DefaultMessageStoreShutDownTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/StoreCheckpointTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/ConsumeQueueExtTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/MappedFileTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/StoreStatsServiceTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/ha/WaitNotifyObjectTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/index/IndexFileTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/AppendCallbackTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/DefaultMessageStoreTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/MappedFileQueueTest.java
+/Users/rtw/IdeaProjects/RocketMQ/store/src/test/java/org/apache/rocketmq/store/ConsumeQueueTest.java
