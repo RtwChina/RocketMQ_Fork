@@ -404,6 +404,7 @@ public abstract class NettyRemotingAbstract {
             this.responseTable.put(opaque, responseFuture);
             final SocketAddress addr = channel.remoteAddress();
             channel.writeAndFlush(request).addListener(new ChannelFutureListener() {
+                // 这里的Future主要是Netty的Client端将数据塞到发送缓冲区后就返回，然后网卡会自动把发送缓冲区的数据发送到网络上
                 @Override
                 public void operationComplete(ChannelFuture f) throws Exception {
                     if (f.isSuccess()) {
@@ -419,7 +420,7 @@ public abstract class NettyRemotingAbstract {
                     log.warn("send a request command to channel <" + addr + "> failed.");
                 }
             });
-
+            // 同步发送成功条件：1. Netty的Client端发送成功 2.收到Broker的回复，即TCP回复
             RemotingCommand responseCommand = responseFuture.waitResponse(timeoutMillis);
             if (null == responseCommand) {
                 if (responseFuture.isSendRequestOK()) {

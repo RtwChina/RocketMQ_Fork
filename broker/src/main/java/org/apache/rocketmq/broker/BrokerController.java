@@ -1104,6 +1104,7 @@ public class BrokerController {
 
 
     private void handleSlaveSynchronize(BrokerRole role) {
+        // 主切换成从
         if (role == BrokerRole.SLAVE) {
             if (null != slaveSyncFuture) {
                 slaveSyncFuture.cancel(false);
@@ -1121,6 +1122,7 @@ public class BrokerController {
                 }
             }, 1000 * 3, 1000 * 10, TimeUnit.MILLISECONDS);
         } else {
+            // 从切换成主
             //handle the slave synchronise
             if (null != slaveSyncFuture) {
                 slaveSyncFuture.cancel(false);
