@@ -101,6 +101,7 @@ public class ConsumerManageProcessor implements NettyRequestProcessor {
         return response;
     }
 
+    // Broker收到COnusmer的offset同步消息，更新本地的消费进度
     private RemotingCommand updateConsumerOffset(ChannelHandlerContext ctx, RemotingCommand request)
         throws RemotingCommandException {
         final RemotingCommand response =

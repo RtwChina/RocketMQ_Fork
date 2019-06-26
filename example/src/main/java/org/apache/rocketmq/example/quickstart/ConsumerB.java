@@ -28,7 +28,7 @@ import org.apache.rocketmq.common.message.MessageExt;
 /**
  * This example shows how to subscribe and consume messages using providing {@link DefaultMQPushConsumer}.
  */
-public class Consumer {
+public class ConsumerB {
 
     public static void main(String[] args) throws InterruptedException, MQClientException {
 
@@ -57,7 +57,7 @@ public class Consumer {
         /*
          * Subscribe one more more topics to consume.
          */
-        consumer.subscribe("TopicTest", "TagA");
+        consumer.subscribe("TopicTest", "TagB");
 
         /*
          *  Register callback to execute on arrival of messages fetched from brokers.

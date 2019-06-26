@@ -181,6 +181,10 @@ public class ProcessQueue {
         return 0;
     }
 
+//    removeMessage返回有两种情况：
+//
+//    如果移除这批消息之后已经没有消息了，那么返回ProcessQueue中最大的offset+1
+//    如果还有消息，那么返回treeMap中最小的key，即未消费的消息中最小的offset
     public long removeMessage(final List<MessageExt> msgs) {
         long result = -1;
         final long now = System.currentTimeMillis();

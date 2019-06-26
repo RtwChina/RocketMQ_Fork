@@ -111,6 +111,7 @@ public class RemoteBrokerOffsetStore implements OffsetStore {
         return -1;
     }
 
+    // 同步消费进度值Broker
     @Override
     public void persistAll(Set<MessageQueue> mqs) {
         if (null == mqs || mqs.isEmpty())

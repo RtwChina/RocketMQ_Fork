@@ -300,6 +300,7 @@ public class DefaultMQPushConsumerImpl implements MQConsumerInner {
                                 pullRequest.getMessageQueue().getTopic(), pullRT);
 
                             long firstMsgOffset = Long.MAX_VALUE;
+                            // tag的精确过滤，会在consumer再次过滤，所以有可能拿不到。
                             if (pullResult.getMsgFoundList() == null || pullResult.getMsgFoundList().isEmpty()) {
                                 DefaultMQPushConsumerImpl.this.executePullRequestImmediately(pullRequest);
                             } else {

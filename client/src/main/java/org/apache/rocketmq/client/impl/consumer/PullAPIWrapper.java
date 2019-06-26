@@ -67,6 +67,7 @@ public class PullAPIWrapper {
         this.unitMode = unitMode;
     }
 
+    // 前期会过滤一下tag
     public PullResult processPullResult(final MessageQueue mq, final PullResult pullResult,
         final SubscriptionData subscriptionData) {
         PullResultExt pullResultExt = (PullResultExt) pullResult;
