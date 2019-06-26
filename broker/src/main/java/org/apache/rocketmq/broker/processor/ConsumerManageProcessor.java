@@ -100,7 +100,7 @@ public class ConsumerManageProcessor implements NettyRequestProcessor {
         response.setRemark("no consumer for this group, " + requestHeader.getConsumerGroup());
         return response;
     }
-
+    // 更新Consumer端的消费进度在Broker
     private RemotingCommand updateConsumerOffset(ChannelHandlerContext ctx, RemotingCommand request)
         throws RemotingCommandException {
         final RemotingCommand response =

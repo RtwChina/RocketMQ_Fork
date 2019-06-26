@@ -25,13 +25,13 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
 /**
  * This class demonstrates how to send messages to brokers using provided {@link DefaultMQProducer}.
  */
-public class Producer {
+public class ProducerB {
     public static void main(String[] args) throws MQClientException, InterruptedException {
 
         /*
          * Instantiate with a producer group name.
          */
-        DefaultMQProducer producer = new DefaultMQProducer("MyMQProducer");
+        DefaultMQProducer producer = new DefaultMQProducer("MyMQProducerB");
 
         /*
          * Specify name server addresses.
@@ -58,7 +58,7 @@ public class Producer {
                  * Create a message instance, specifying topic, tag and message body.
                  */
                 Message msg = new Message("MyTopic" /* Topic */,
-                    "TagA" /* Tag */,
+                    "TagB" /* Tag */,
                     ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
                 );
                 /*

@@ -29,14 +29,14 @@ import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
 /**
  * This example shows how to subscribe and consume messages using providing {@link DefaultMQPushConsumer}.
  */
-public class Consumer {
+public class ConsumerB {
 
     public static void main(String[] args) throws InterruptedException, MQClientException {
 
         /*
          * Instantiate with specified consumer group name.
          */
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("MyConsumer");
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("MyConsumer2");
 
         /*
          * Specify name server addresses.
@@ -60,7 +60,7 @@ public class Consumer {
         /*
          * Subscribe one more more topics to consume.  *标识所有的Tag
          */
-        consumer.subscribe("MyTopic", "TagA");
+        consumer.subscribe("MyTopic", "TagB");
 
         /*
          *  Register callback to execute on arrival of messages fetched from brokers.
