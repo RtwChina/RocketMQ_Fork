@@ -108,7 +108,7 @@ public class MQClientInstance {
     private final Lock lockNamesrv = new ReentrantLock();
     private final Lock lockHeartbeat = new ReentrantLock();
 
-    // 都是根据当前Consumer、Producer所订阅的Topic拿到的一些Broker信息
+    // 都是根据当前Consumer、Producer所订阅的Topic拿到的一些Broker信息l,HashMap<Long/* brokerId */, String/* address */>是指主从模式的Broker所有数据
     private final ConcurrentMap<String/* Broker Name */, HashMap<Long/* brokerId */, String/* address */>> brokerAddrTable =
         new ConcurrentHashMap<String, HashMap<Long, String>>();
     private final ConcurrentMap<String/* Broker Name */, HashMap<String/* address */, Integer>> brokerVersionTable =
@@ -1032,21 +1032,25 @@ public class MQClientInstance {
         return null;
     }
 
+
+    // 选择一个BrokerID 以及其 地址
     public FindBrokerResult findBrokerAddressInSubscribe(
         final String brokerName,
-        final long brokerId,
+        final long brokerId,   // 建议的brokerId
         final boolean onlyThisBroker
     ) {
         String brokerAddr = null;
         boolean slave = false;
         boolean found = false;
 
+        // 储存了同一个BrokerName下的所有主Broker信息
         HashMap<Long/* brokerId */, String/* address */> map = this.brokerAddrTable.get(brokerName);
         if (map != null && !map.isEmpty()) {
             brokerAddr = map.get(brokerId);
+            // brokerId非零就表示slave
             slave = brokerId != MixAll.MASTER_ID;
             found = brokerAddr != null;
-
+            // 如果取主Broker、建议Broker失败，则直接随机选择一个Slave进行拉取。
             if (!found && !onlyThisBroker) {
                 Entry<Long, String> entry = map.entrySet().iterator().next();
                 brokerAddr = entry.getValue();

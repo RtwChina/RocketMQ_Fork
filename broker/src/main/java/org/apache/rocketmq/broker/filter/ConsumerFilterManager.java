@@ -163,6 +163,7 @@ public class ConsumerFilterManager extends ConfigManager {
         }
     }
 
+
     public ConsumerFilterData get(final String topic, final String consumerGroup) {
         if (!this.filterDataByTopic.containsKey(topic)) {
             return null;

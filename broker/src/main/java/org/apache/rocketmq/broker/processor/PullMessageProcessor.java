@@ -203,6 +203,7 @@ public class PullMessageProcessor implements NettyRequestProcessor {
                 return response;
             }
             if (!ExpressionType.isTagType(subscriptionData.getExpressionType())) {
+                // 真正调用过滤器进行过滤，内部使用了BloomFilter过滤进行过滤
                 consumerFilterData = this.brokerController.getConsumerFilterManager().get(requestHeader.getTopic(),
                     requestHeader.getConsumerGroup());
                 if (consumerFilterData == null) {
