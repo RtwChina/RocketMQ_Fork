@@ -48,6 +48,7 @@ public abstract class RebalanceImpl {
 
     // 当前Consumer进行负载均衡保存的 MessageQueue 和 ProcessQueue，同PullRequest中的 MessageQueue 和 ProcessQueue
     protected final ConcurrentMap<MessageQueue, ProcessQueue> processQueueTable = new ConcurrentHashMap<MessageQueue, ProcessQueue>(64);
+
     protected final ConcurrentMap<String/* topic */, Set<MessageQueue>> topicSubscribeInfoTable =
         new ConcurrentHashMap<String, Set<MessageQueue>>();
 
@@ -424,6 +425,7 @@ public abstract class RebalanceImpl {
             }
         }
 
+        // 将需要新增的PullRequest添加到pullRequestQueue消息拉取请求队列中。
         this.dispatchPullRequest(pullRequestList);
 
         return changed;

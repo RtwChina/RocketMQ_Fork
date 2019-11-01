@@ -64,6 +64,26 @@ public class AllocateMessageQueueAveragely implements AllocateMessageQueueStrate
         return result;
     }
 
+    public static void main(String[] args) {
+        List<MessageQueue> mqAll = new ArrayList<MessageQueue>();
+        for (int i = 0; i<7 ; i++) {
+            MessageQueue messageQueue = new MessageQueue();
+            messageQueue.setTopic(String.valueOf(i));
+            mqAll.add(messageQueue);
+        }
+
+        List<String> cidAll = new ArrayList<String>();
+        cidAll.add("currentID");
+        for (int i = 0; i<2 ; i++) {
+            cidAll.add("curent" + i);
+        }
+
+        AllocateMessageQueueAveragely allocateMessageQueueAveragely = new AllocateMessageQueueAveragely();
+        List<MessageQueue> allocate = allocateMessageQueueAveragely.allocate("consumerGroup", "currentID", mqAll, cidAll);
+        System.out.println("ddd");
+
+    }
+
     @Override
     public String getName() {
         return "AVG";

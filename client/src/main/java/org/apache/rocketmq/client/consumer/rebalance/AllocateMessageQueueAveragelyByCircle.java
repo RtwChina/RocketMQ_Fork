@@ -60,6 +60,25 @@ public class AllocateMessageQueueAveragelyByCircle implements AllocateMessageQue
         return result;
     }
 
+    public static void main(String[] args) {
+        List<MessageQueue> mqAll = new ArrayList<MessageQueue>();
+        for (int i = 1; i<=7 ; i++) {
+            MessageQueue messageQueue = new MessageQueue();
+            messageQueue.setTopic(String.valueOf(i));
+            mqAll.add(messageQueue);
+        }
+
+        List<String> cidAll = new ArrayList<String>();
+        for (int i = 0; i<2 ; i++) {
+            cidAll.add("curent" + i);
+        }
+        cidAll.add("currentID");
+
+        AllocateMessageQueueAveragelyByCircle allocateMessageQueueAveragely = new AllocateMessageQueueAveragelyByCircle();
+        List<MessageQueue> allocate = allocateMessageQueueAveragely.allocate("consumerGroup", "currentID", mqAll, cidAll);
+        System.out.println("ddd");
+
+    }
     @Override
     public String getName() {
         return "AVG_BY_CIRCLE";
